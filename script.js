@@ -62,4 +62,42 @@ cards.forEach(card => {
     card.style.transform = "scale(1)";
   });
 });
+const countdown = () => {
+  const eventDate = new Date("June 18, 2026 00:00:00").getTime();
+  const now = new Date().getTime();
+  const gap = eventDate - now;
 
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+
+  const days = Math.floor(gap / day);
+  const hours = Math.floor((gap % day) / hour);
+  const minutes = Math.floor((gap % hour) / minute);
+  const seconds = Math.floor((gap % minute) / second);
+
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
+};
+
+setInterval(countdown, 1000);
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+  let count = 0;
+  const update = () => {
+    const target = +counter.dataset.target;
+    count += target / 100;
+    if (count < target) {
+      counter.innerText = Math.floor(count);
+      requestAnimationFrame(update);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  update();
+});

@@ -11,23 +11,35 @@
 <!-- NAVBAR -->
 <header>
   <nav class="navbar">
-    <h2>MTD 2026</h2>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
+    
+    <div class="nav-left">
+      <img src="images/logobg.png" alt="logo" class="navbar-logo">
+    </div>
+
+    <ul class="nav-links">
       <li><a href="#about">À propos</a></li>
+      <li><a href="#why">Pourquoi</a></li>
       <li><a href="#activities">Activités</a></li>
       <li><a href="#inscription">Inscription</a></li>
+      <li><a href="#participants">Participants</a></li>
+      <li><a href="#program">Programme</a></li>
     </ul>
+
   </nav>
 </header>
 
 <!-- HERO -->
 <section id="accueil" class="hero">
   <div class="overlay">
-    <h1>Microfinance Tech Days</h1>
-    <p>18 - 19 Juin 2026</p>
-    <p>Favoriser l’inclusion financière grâce à la technologie</p>
+    <h1>Shaping the Future of Financial Inclusion</h1>
+    <p>Microfinance Tech Days 2026 • 18-19 Juin</p>
     <a href="#inscription" class="btn">S’inscrire</a>
+    <div class="countdown">
+    <div><span id="days">0</span><p>Jours</p></div>
+    <div><span id="hours">0</span><p>Heures</p></div>
+    <div><span id="minutes">0</span><p>Minutes</p></div>
+    <div><span id="seconds">0</span><p>Secondes</p></div>
+  </div>
   </div>
 </section>
 
@@ -45,12 +57,26 @@
     </div>
   </div>
 </section>
+<!-- WHY -->
+<section id="why">
+  <h2>Pourquoi participer ?</h2>
+  <div class="cards">
+    <div class="card">Networking avec experts</div>
+    <div class="card">Découverte fintech</div>
+    <div class="card">Opportunités business</div>
+  </div>
+</section>
 
+<!-- STATS -->
+<section class="stats">
+  <div><h3 class="counter" data-target="200">0</h3><p>Participants</p></div>
+  <div><h3 class="counter" data-target="20">0</h3><p>Speakers</p></div>
+  <div><h3 class="counter" data-target="10">0</h3><p>Pays</p></div>
+</section>
 <!-- ACTIVITIES -->
 <section id="activities">
   <div class="activities-container">
     <h2>Activités</h2>
-    <br>
     <div class="carousel">
       <div class="card active">
         <img src="images/conference.png" alt="">
@@ -99,16 +125,25 @@
   </div>
 </section>
 
+<!-- PROGRAM -->
+<section id="program">
+  <h2>Programme</h2>
+  <p><strong>Jour 1 :</strong> Conférences & panels</p>
+  <p><strong>Jour 2 :</strong> Ateliers & networking</p>
+</section>
+
 <!-- INSCRIPTION -->
 <section id="inscription">
   <h2>Inscription</h2>
   <p>Réservez votre place dès maintenant en remplissant le formulaire.</p>
-  <iframe 
-    src="https://forms.gle/MxFLZc9D4gcvc7tj9"
-    width="100%" 
-    height="500"
-    frameborder="0">
-  </iframe>
+  <div class="form-container"> 
+    <iframe 
+      src="https://forms.gle/MxFLZc9D4gcvc7tj9"
+      width="100%" 
+      height="500"
+      frameborder="0">
+    </iframe>
+  </div>
 </section>
 
 <!-- FOOTER -->
