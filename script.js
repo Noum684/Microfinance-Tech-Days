@@ -15,16 +15,19 @@ window.addEventListener("scroll", () => {
   } else {
     nav.style.background = "rgba(10,25,47,0.9)";
   }
+  nav.classList.toggle("scrolled", window.scrollY > 50);
 });
 
 // Animation apparition au scroll
-const elements = document.querySelectorAll("section");
+const elements = document.querySelectorAll(".fade-up");
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.style.opacity = 1;
       entry.target.style.transform = "translateY(0)";
+      // entry.target.style.transitionDelay = `${index * 0.1}s`;
+      entry.target.classList.add('show');
     }
   });
 });
@@ -62,6 +65,8 @@ cards.forEach(card => {
     card.style.transform = "scale(1)";
   });
 });
+
+
 const countdown = () => {
   const eventDate = new Date("June 18, 2026 00:00:00").getTime();
   const now = new Date().getTime();
@@ -100,4 +105,11 @@ counters.forEach(counter => {
     }
   };
   update();
+});
+
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav-links');
+
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
 });
