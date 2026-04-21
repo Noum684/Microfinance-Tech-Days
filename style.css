@@ -313,7 +313,7 @@ section {
 }
 
 /* HIGHLIGHTS */
-<<<<<<< HEAD
+
 .high{
   display: flex;
   justify-content: center;
@@ -328,8 +328,6 @@ section {
   padding-left: 20px;
   border-radius: 90px;
 }
-=======
->>>>>>> 1b996b9c7e2668121c8976db31d876c5aa7182fd
 #highlights {
   position: relative;
   padding: 80px 20px;
@@ -337,32 +335,22 @@ section {
   overflow: hidden;
   /* color: orange; */
 }
-<<<<<<< HEAD
-
-#highlights h2 {
-  margin-bottom: 20px;
-=======
 .highlights h2 {
   margin-bottom: 40px;
->>>>>>> 1b996b9c7e2668121c8976db31d876c5aa7182fd
   color: orange;
 
 }
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-<<<<<<< HEAD
   gap: 30px;
   max-width: 900px;
   margin: auto;
   margin-top: 40px;
-
-=======
   background: url('images/bg.png') no-repeat center center/cover;
   gap: 30px;
   max-width: 900px;
   margin: auto;
->>>>>>> 1b996b9c7e2668121c8976db31d876c5aa7182fd
 }
 
 .highlight-item {
@@ -371,7 +359,6 @@ section {
   padding: 30px;
   border-radius: 15px;
   transition: 0.3s;
-<<<<<<< HEAD
   overflow: hidden; 
   margin-bottom: 40px;
 }
@@ -380,7 +367,6 @@ section {
   margin-top: 30px;
   font-size: 30px;
   color: orange;
-=======
   overflow: hidden;
 }
 
@@ -388,7 +374,6 @@ section {
   font-size: 30px;
   color: orange;
   margin-bottom: 15px;
->>>>>>> 1b996b9c7e2668121c8976db31d876c5aa7182fd
 }
 
 .highlight-item::before {
@@ -437,13 +422,10 @@ section {
 
 #organizers,
 #partners,
-<<<<<<< HEAD
 #sponsors,
 #partnerstech,
-#partnerscom{
-=======
+#partnerscom
 #sponsors {
->>>>>>> 1b996b9c7e2668121c8976db31d876c5aa7182fd
   padding: 80px 20px;
   text-align: center;
   background: rgba(255, 255, 255, 0.822);
