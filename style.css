@@ -361,6 +361,7 @@ section {
   transition: 0.3s;
   overflow: hidden; 
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .highlight-item i {
@@ -412,6 +413,7 @@ section {
   height:auto;
   opacity: 1;
   transition: 0.3s;
+  max-width: 100%;
   
 }
 
@@ -424,13 +426,14 @@ section {
 #partners,
 #sponsors,
 #partnerstech,
-#partnerscom
+#partnerscom,
 #sponsors {
   padding: 80px 20px;
   text-align: center;
   background: rgba(255, 255, 255, 0.822);
   color: #020c1b;
   font-weight: bold;
+  
 }
 
 /* Fade-up Animation */
