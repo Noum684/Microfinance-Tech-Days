@@ -313,6 +313,21 @@ section {
 }
 
 /* HIGHLIGHTS */
+
+.high{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;margin-top: 50px ;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('images/bg.png') no-repeat center center/cover;
+  flex-direction: column;
+  align-items: flex-start; 
+  padding-left: 20px;
+  border-radius: 90px;
+}
 #highlights {
   position: relative;
   padding: 80px 20px;
@@ -328,6 +343,10 @@ section {
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
   background: url('images/bg.png') no-repeat center center/cover;
   gap: 30px;
   max-width: 900px;
@@ -340,6 +359,14 @@ section {
   padding: 30px;
   border-radius: 15px;
   transition: 0.3s;
+  overflow: hidden; 
+  margin-bottom: 40px;
+}
+
+.highlight-item i {
+  margin-top: 30px;
+  font-size: 30px;
+  color: orange;
   overflow: hidden;
 }
 
@@ -395,6 +422,9 @@ section {
 
 #organizers,
 #partners,
+#sponsors,
+#partnerstech,
+#partnerscom
 #sponsors {
   padding: 80px 20px;
   text-align: center;
