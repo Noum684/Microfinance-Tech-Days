@@ -68,7 +68,7 @@ cards.forEach(card => {
 
 
 const countdown = () => {
-  const eventDate = new Date("June 18, 2026 00:00:00").getTime();
+  const eventDate = new Date("October 08, 2026 00:00:00").getTime();
   const now = new Date().getTime();
   const gap = eventDate - now;
 
